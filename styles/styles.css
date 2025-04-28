@@ -82,7 +82,34 @@ footer{
 }
  
 .bordes{
-    border: #32A89C solid 2px;
+    border: #32A89C solid 5px;
+}
+
+.contenedorform1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px;
+    margin: 30px;
+    width: 25%;
+
+}
+
+.contenedorform2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 25px;
+}
+
+.boton1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    
+
 }
 
 @media (max-width: 768px){
@@ -103,7 +130,7 @@ footer{
     main{
         display: flex;
         flex-direction: column;
-        padding-top: 160px;
+        padding-top: 80px;
     }
 
     .fondoBoostrap{
@@ -120,6 +147,13 @@ footer{
         justify-content: space-around;
         flex-wrap: wrap;
         align-content: center;
+    }
+    .contenedorform1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+
     }
 
    
