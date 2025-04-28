@@ -49,23 +49,36 @@
 
     <main>
         <h2>CONTACTO</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d954741.4123690564!2d-104.09730693437501!3d20.813178129302116!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1743210356355!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="d-flex flex-row justify-content-center m-50 p-20">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d954741.4123690564!2d-104.09730693437501!3d20.813178129302116!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1743210356355!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-        <form action="servidor" method="post">
-            <label for="nombre">NOMBRE Y APELLIDO:</label>
-            <input type="text" name="servidor" id="nombre">
+        
 
-            <label for="e-mail">E-MAIL:</label>
-            <input type="email" name="servidor" id="e-mail">
+            <form action="servidor" method="post">
+                <div class="contenedorform1">
+                    <label for="nombre">NOMBRE Y APELLIDO:</label>
+                    <input type="text" name="servidor" id="nombre">
 
-            <label for="telefono">TELEFONO:</label>
-            <input type="tel" name="servidor" id="telefono">
+                    <label for="e-mail">E-MAIL:</label>
+                    <input type="email" name="servidor" id="e-mail">
 
-            <label for="consulta">CONSULTA:</label>
-            <textarea name="servidor" id="consulta"></textarea>
+                    <label for="telefono">TELEFONO:</label>
+                    <input type="tel" name="servidor" id="telefono">
+                </div>
 
-            <input type="button" value="ENVIAR">
-        </form>
+                <div class="contenedorform2">
+                    <label for="consulta">CONSULTA:</label>
+                    <textarea name="servidor" id="consulta"></textarea>
+                </div>
+
+                <div class="boton1">
+
+                    <input type="button" value="ENVIAR">
+
+                </div>
+                
+            </form>
         
     </main>
 
