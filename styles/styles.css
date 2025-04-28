@@ -85,7 +85,7 @@ footer{
     border: #32A89C solid 2px;
 }
 
-@media (max-width: 576px){
+@media (max-width: 768px){
     header{
         display: flex;
         flex-direction: row;
