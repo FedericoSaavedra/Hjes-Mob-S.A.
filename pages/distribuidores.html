@@ -8,112 +8,98 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
-        <h1>
-            <div>
-                <img src="../assets/img/logo1.jpg" alt="imagen-logo">
 
-            </div>
-        </h1>
-        <nav class="navbar navbar-expand-lg ">
+    <header class="text-center p-3 bg-#32A89C solid">
+        
+        <div>
+            
+            <img src="../assets/img/logo1.jpg" alt="imagen-logo" class="imagen-fluid" style="max-width: 200px;">
+
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-black bg-#32A89C solid">
             <div class="container-fluid">
-              <a href="../index.html">INICIO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="../index.html">Hjes Mob S.A</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto  mb-lg-0">
-                        <li class="nav-item">
-                            <a href="./novedades.html">NOVEDADES</a>
-                        </li>
-                        <li class="nav-item">
-                             <a href="./nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./distribuidores.html">DISTRIBUIDORES</a>
-                        </li>
-                        <li class="nav-item">
-                             <a href="./contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="./novedades.html">Novedades</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./distribuidores.html">Distribuidores</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
             </div>
         </nav>
+          
+
     </header>
 
 
 
 
-    <main>
+    <main class="container my-5">
+        <h2 class="text-center mb-4">DISTRIBUIDORES</h2>
 
-        <h2>DISTRIBUIDORES</h2>
-
-        <div class="cajacontenedora">
-
-            <div class="bordes">
-                <div class="d-flex flex-column mb-3">
-                    <form action="servidor-distribuidor" method="post">
-                        <div class="p-2">
-
-                            <label for="servidor-distribuidor" >PROVINCIA:</label>
-                            <select name="servidor-distribuidor" id="PROVINCIA">
-                                <option value="">Buenos Aires</option>
-                                <option value="">Entre Rios</option>
-                                <option value="">Cordoba</option>
-                            </select>
-                        </div>
-                        <div class="bordes">
-                                <div  class="p-2">
-
-                                    <label for="servidor-distribuidor">BUSCAR POR DISTRIBUIDOR</label>
-                                    <input type="text" name="servidor-distribuidor" id="buscar Distribuidor">
-                                    <input type="button" value="BUSCAR">
-                                </div>
-                        </div>
-
-                        <div class="bordes">
-                            <div class="p-2">
-
-                                <label for="servidor-distribuidor"></label>
-                                <input type="button" value="QUIERO SER DISTRIBUIDOR">
+        <div class="card p-4 shadow-sm">
+            
+                <form action="servidor-distribuidor" method="post">
+                    <div class="row g-3">
+                            <!-- Selección de Provincia -->
+                            <div class="col-md-6">
+                                <label for="provincia" class="form-label">Provincia:</label>
+                                <select name="provincia" id="provincia" class="form-select" required>
+                                    <option value="">Seleccione una provincia</option>
+                                    <option value="Buenos Aires">Buenos Aires</option>
+                                    <option value="Entre Rios">Entre Ríos</option>
+                                    <option value="Cordoba">Córdoba</option>
+                                </select>
                             </div>
-                        </div>
-                    </form>
-                </div>    
 
-                <h3>LISTADO DE DISTRIBUIDORES</h3>
-            </div>
+                            <!-- Buscar Distribuidor -->
+                            <div class="col-md-6">
+                                <label for="buscarDistribuidor" class="form-label">Buscar por distribuidor:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="buscarDistribuidor" name="buscarDistribuidor" placeholder="Nombre del distribuidor">
+                                    <button type="submit" class="btn btn-primary">Buscar</button>
+                                </div>
+                            </div>
+
+                            <!-- Quiero ser distribuidor -->
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-success">Quiero ser distribuidor</button>
+                            </div>
+
+                    </div>
+
+                </form>
         </div>
-        
-        
 
+        <h3 class="mt-5 text-center">Listado de Distribuidores</h3>
 
     </main>
 
 
-    <footer>
+    <footer class="bg-#32A89C solid text-black text-center p-4">
+        <div class="container">
+          <p>OFICINA CENTRAL:</p>
+          <ul class="list-unstyled">
+            <li>Urquiza 2345</li>
+            <li>Florida Oeste, Pcia. Buenos Aires</li>
+            <li>(5411)xxxx-xxxx</li>
+          </ul>
+          <p>SEGUINOS:</p>
+          <img src="../assets/img/instagram3.png" alt="redsocial" style="width: 40px;">
         
-        <div class="d-flex justify-content-center">
-            <p>OFICINA CENTRAL:</p>
-            <ul>
-                <li>Urquiza 2345</li>
-                <li>Florida Oeste, Pcia. Buenos Aires </li>
-                <li>(5411)xxxx-xxxx</li>
-            </ul>
         </div>
 
-            
-        <div>
-                <p>SEGUINOS:</p>
-
-                <img src="../assets/img/instagram3.png" alt="redsocial">
-        </div>
-            
-        
     </footer>
 
 
