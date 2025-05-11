@@ -1,3 +1,104 @@
+main h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2.5rem;
+  margin: 2.5rem;
+}
 
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #000;
+  background-color: #F2F1F0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #32A89C;
+  text-align: center;
+  padding: 1rem;
+}
+header img {
+  max-width: 200px;
+}
+header nav.navbar {
+  background-color: transparent;
+}
+header nav.navbar .navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+header nav.navbar .nav-link {
+  color: white;
+}
+header nav.navbar .nav-link:hover {
+  color: rgb(229.5, 229.5, 229.5);
+}
+header nav.navbar .btn {
+  border-color: white;
+  color: white;
+}
+header nav.navbar .btn:hover {
+  background-color: white;
+  color: #32A89C;
+}
+header nav.navbar .form-control {
+  border: 1px solid white;
+}
+
+main {
+  padding: 2rem;
+}
+main h1 {
+  font-size: 2.5rem;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+main .imglogo1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+main .imglogo1 img {
+  max-width: 100%;
+  height: auto;
+}
+main .parrafos1 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+main .centrado {
+  text-align: center;
+}
+
+footer {
+  background-color: #32A89C;
+  color: #000;
+  text-align: center;
+  padding: 2rem;
+}
+footer img {
+  width: 40px;
+  margin-top: 1rem;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+}
 
 /*# sourceMappingURL=styles.css.map */

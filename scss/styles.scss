@@ -1,0 +1,117 @@
+@use "utilities/variables"as *;
+@use "mixinsextends"as *;
+
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: $color-texto;
+    background-color: $color-principal;
+    margin: 0;
+    padding: 0;
+  }
+  
+  // Header
+  header {
+    background-color: $color-header;
+    text-align: center;
+    padding: 1rem;
+  
+    img {
+      max-width: 200px;
+    }
+  
+    nav.navbar {
+      background-color: transparent;
+  
+      .navbar-brand {
+        color: white;
+        font-weight: bold;
+      }
+  
+      .nav-link {
+        color: white;
+  
+        &:hover {
+          color: darken(white, 10%);
+        }
+      }
+  
+      .btn {
+        border-color: white;
+        color: white;
+  
+        &:hover {
+          background-color: white;
+          color: $color-header;
+        }
+      }
+  
+      .form-control {
+        border: 1px solid white;
+      }
+    }
+  }
+  
+  // Main
+  main {
+    padding: 2rem;
+  
+    h1 {
+      font-size: 2.5rem;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+      margin: 2rem;
+    }
+
+    h2 {
+      @extend %flexrowcenter;  
+      @include tipogarfiadotexto;  
+    }
+  
+    .imglogo1 {
+      text-align: center;
+      margin: 2rem 0;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+    .parrafos1 {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: justify;
+    }
+  
+    .centrado {
+      text-align: center;
+    }
+  }
+  
+  // Footer
+  footer {
+    background-color: $color-header;
+    color: $color-texto;
+    text-align: center;
+    padding: 2rem;
+  
+    img {
+      width: 40px;
+      margin-top: 1rem;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    p{
+        @include tipografiafooter;
+    }
+  }

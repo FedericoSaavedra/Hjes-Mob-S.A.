@@ -1,0 +1,21 @@
+//extendes
+%flexrowcenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2.5rem;
+    margin: 2.5rem;
+}
+
+//mixin
+
+@mixin tipogarfiadotexto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+@mixin tipografiafooter{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
