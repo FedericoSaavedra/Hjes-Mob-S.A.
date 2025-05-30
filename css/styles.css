@@ -101,4 +101,24 @@ footer p {
   font-size: 1.5rem;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pulse-hover:hover {
+  animation: pulse 0.6s ease-in-out;
+}
+
+
 /*# sourceMappingURL=styles.css.map */
